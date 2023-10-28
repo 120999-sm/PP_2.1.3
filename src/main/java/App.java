@@ -19,7 +19,7 @@ public class App {
         Cat catTwo = (Cat) applicationContext.getBean("cat");
         System.out.println(catTwo.getMessage());
 
-        System.out.println("Сравненине бинов HelloWorld: " + (bean == beanTwo));
+        System.out.println("Сравненине бинов HelloWorld: " + (bean.equals(beanTwo)));//todo объекты сравниваются по .equals (javaCore)
         System.out.println("Сравненине бинов Cat: " + (cat == catTwo));
     }
 }
